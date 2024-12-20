@@ -1,0 +1,202 @@
+body,ul,li,a,h1,h2,form{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+header{
+    text-align: center;
+    background-color: rgb(230, 0, 18);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+header h1{
+        color: white;
+        border: 8px solid white;
+        padding: 6px 12px;
+        display: inline-block;
+        border-radius: 20px;
+}
+
+.banner img{
+    position: relative;
+    left: 0;
+    
+}
+
+.banner .Welcome{
+    position: absolute;
+    color: white;
+    background-color: orange;
+    padding: 30px;
+    
+    top: 50%;
+    z-index: 1;
+}
+.banner img{
+    max-width: 100%;
+}
+ .banner span{
+    font-size: 1.4em;
+ }
+
+.main-nav{
+    background-color: #f4f4f4;
+    padding: 20px;
+ }
+
+ .main-nav li{
+    display: inline-block;
+    width: 33%;
+    font-size: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+
+ nav li a{
+    text-decoration: none;
+    color: #4b4b4b;
+ }
+ main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+ }
+
+ article h2{
+    color: rgb(205, 47, 47);
+    font-size: 36px;
+ }
+
+ article p{
+    line-height: 2em;
+ }
+
+.images{
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+}
+
+.images li{
+    display: inline-block;
+    max-width: 40%;
+    margin: 20px 5%;
+}
+
+.images li img{
+    max-width: 100%;
+}
+
+.join{
+    background-color: #f4f4f4;
+    text-align: center;
+    line-height: 2em;
+}
+
+.join h2{
+    color: rgb(201, 77, 28);
+    padding: 20px 0;
+}
+
+.join p{
+    margin: 10px 70px;
+}
+
+form input{
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-radius: 28px;
+    font-size: 24px;
+    border: 4px solid white;
+}
+
+footer{
+    text-align: center;
+    background-color: #f63;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* pseudo classes */
+
+nav li a:hover{
+    text-decoration: underline;
+}
+
+.images li:hover{
+    position: relative;
+    top: -5px;
+}
+
+form input:focus{
+    border: 4px dashed white;
+}
+
+form input:valid{
+    border: 4px solid rgb(17, 238, 17);
+
+}
+
+@media screen and (max-width:1200px){
+    .banner .Welcome h2{
+        font-size: 20px;
+    }
+
+    .main-nav li{
+        font-size: 0.96em;
+    }
+}
+
+@media screen and (max-width:1090px)
+{
+    .banner .Welcome h2{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:1070px)
+{
+    .banner .Welcome{
+        top: 150px;
+    }
+}
+@media screen and (max-width:760px){
+    .images li{
+        display: block;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width:600px)
+{
+    .banner .Welcome{
+        top: auto;
+        left: auto;
+        position: relative;
+        text-align: center;
+    }
+    
+    .main-nav li{
+        display: block;
+        margin: 15px auto;
+    }
+}
+
+@media screen and (max-width:530px)
+{
+    .header{
+        position: static;
+    }
+
+    .banner{
+        width: fit-content;
+    }
+}
